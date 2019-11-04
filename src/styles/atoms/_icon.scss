@@ -1,0 +1,10 @@
+.a-icon {
+	display: inline-block;
+	padding: rem(8px);
+
+	@include square(40px);
+
+	img {
+		height: 100%;
+	}
+}

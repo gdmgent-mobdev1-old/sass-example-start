@@ -5,6 +5,7 @@ require('@babel/polyfill');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const chalk = require('chalk');
@@ -77,6 +78,13 @@ module.exports = (env, argv) => {
         filename: dev ? '[name].css' : '[name].[hash].css',
         chunkFilename: dev ? '[id].css' : '[id].[hash].css',
       }),
+      new StylelintPlugin({
+        configFile: '.stylelintrc',
+        context: 'src',
+        files: '**/*.scss',
+        failOnError: false,
+        quiet: false,
+      }),
       new CleanWebpackPlugin(),
       new ProgressBarPlugin({
         format: `  build [:bar] ${chalk.green.bold(':percent')} (:elapsed seconds)`,
@@ -86,7 +94,7 @@ module.exports = (env, argv) => {
 
     // define our development server
     devServer: {
-      port: process.env.PORT || 8080,
+      port: process.env.PORT || 8081,
       contentBase: './src',
       historyApiFallback: false,
     },

@@ -1,0 +1,37 @@
+$o-card-border-radius: rem(3px);
+
+// TODO:
+// Add a card molecule with the following propertie:s
+// - It has a max-width of 614px
+// - Each card has a vertical margin of 30px
+
+// TODO
+// Add a header for the card
+// - It has a white background
+// - It has an all-round padding of 16px
+// - It has a border of 1px
+// - It has a border-radius on the top side of it's border ($o-card-border-radius)
+// - The avatar inside the header has a margin-right of 10px
+
+// TODO
+// Add an image inside the card
+// - The image does not overflow the card
+// - The image scales to fill the card
+
+// TODO
+// Add a content area for the card
+// - It has a white background
+// - It has a border of 1px (but not on the top-side)
+// - It has a border-radius on the bottom side of it's border ($o-card-border-radius)
+// - It has a horizontal padding of 16px
+
+// TODO
+// Add actions to the card
+// - The actions should be spaced evenly
+// - The actions should have a vertical padding of 5px
+
+// TODO
+// Add a likes-counter to the card
+// - It has a font-size of 14px (base)
+// - It has a weight of 600
+// - It has a margin-bottom of 4px

@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	background-color: $background-color-primary;
+
+	// TODO: add 80px of padding-top here to account for the fixed header
+}

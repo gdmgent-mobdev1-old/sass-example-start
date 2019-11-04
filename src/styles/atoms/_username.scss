@@ -1,0 +1,12 @@
+.a-username {
+	font-size: rem($font-size-base);
+	font-weight: 600;
+	color: $color-base;
+
+	margin: 0 0 rem(3px);
+}
+
+.a-description {
+	font-size: rem($font-size-small);
+	line-height: rem(15px);
+}
